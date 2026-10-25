@@ -1,0 +1,13 @@
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: static-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: ""
+  volumeName: static-pv
+  resources:
+    requests:
+      storage: 50Mi
